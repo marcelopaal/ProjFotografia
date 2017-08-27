@@ -1,0 +1,230 @@
+body{
+  font-family: 'Dancing Script', cursive;
+  background: black;
+  margin-left : 10%;
+  margin-right : 10%;
+  padding : 0px;
+  animation: Animacion 1s;
+}
+
+@-webkit-keyframes Animacion{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+img{
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+
+/*****  CABECERA  *****/
+
+ #banner {
+	margin: 0 auto;
+	padding: 1em 0 0 0;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+#banner h1 {font-size: 2.571em; line-height: 1;}
+
+#banner h1 strong {
+    text-decoration: none;
+    text-align: left;
+    color: white;
+		font-weight: bold;
+		margin: 0 0 .6em .2em;
+	  text-shadow: 2px 2px 2px #02010a;
+
+	}
+
+#banner nav ul {list-style: none; margin: 0 auto;text-align: right}
+#banner nav li {display: inline; margin: 1;; font-size: 24px}
+
+#banner nav a:link, #banner nav a:visited {
+  display: inline-block;
+  padding: 1px 1.5em;
+  color: white;
+
+}
+
+#banner nav a:hover, #banner nav a:active,
+#banner nav .active a:link, #banner nav .active a:visited {
+  text-shadow: none !important;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/***** IMAGEN CENTRAL ******/
+
+#Imagen {
+  text-align: center;
+	overflow: hidden;
+	padding: 20px;
+
+}
+
+#Imagen img {
+  width: 65%;
+
+}
+
+#Imagen img {
+  width: 60%;
+  height: 80%;
+}
+
+/****** IMAGEN SECUNDARIA ****/
+#imagen2 {
+  text-align: center;
+	overflow: hidden;
+	padding: 20px;
+}
+
+#imagen2 img {
+  margin-top: 5%;
+  width: 60%;
+  height: 80%;
+}
+
+#imagen2 img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 20px #82c3a6;
+}
+/****** IMAGEN SECUNDARIA 2  ****/
+
+#imagen3 {
+  text-align: center;
+	overflow: hidden;
+	padding: 20px;
+
+}
+
+#imagen3 img {
+  margin-top: 5%;
+  width: 60%;
+  height: 80%;
+}
+
+#imagen3 img:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px 20px #82c3a6;
+}
+
+
+
+#pie_pagina {
+ margin: 0 auto;
+ padding: 1em 0 0 0;
+ background-color: #C6d5c5;
+ border-radius: 0px 0px 10px 10px;
+
+}
+
+.contenido{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.contenido div {
+  box-sizing: border-box;
+  min-height: 500px;
+  min-width: 100px;
+}
+
+.contenedor_pie{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.contenedor_pie div {
+  box-sizing: border-box;
+  min-width: 100px;
+}
+
+#contactos,
+#terminos,
+#redes,
+#derechos{
+  margin-left: 5%;
+  width: 20%;
+}
+
+#contactos,
+#terminos,
+#redes,
+#derechos strong{
+  font-size: 24px;
+}
+
+
+
+.imagen_principal{
+  background-color: #82c3a6;
+  width: 100%;
+}
+
+.imagen_sec1{
+  background-color: #d5c75f;
+  text-align: center;
+  font-size: 24px;
+  width: 50%;
+}
+
+.imagen_sec2{
+  background-color: #d5c75f;
+  text-align: center;
+  font-size: 24px;
+  width: 50%;
+
+}
+
+@media all and (max-width: 900px) {
+
+  body{
+    margin-left : auto;
+    margin-right : auto;
+  }
+  .banner{
+		width: 100%;
+		order: 1;
+	}
+
+  .imagen_principal {
+		width: 100%;
+		order: 2;
+	}
+
+	.imagen_sec1 {
+		width: 100%;
+		order: 3;
+	}
+	.imagen_sec2 {
+		width: 100%;
+		order: 4;
+	}
+
+  #contactos,
+  #terminos,
+  #redes,
+  #derechos{
+    width: 100%;
+  }
+
+
+}
